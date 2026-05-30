@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Annisa Feriska Faradila</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:#6366f133;
+    border-radius:50%;
+    filter:blur(120px);
+    top:-200px;
+    left:-200px;
+    z-index:-1;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:400px;
+    height:400px;
+    background:#ec489933;
+    border-radius:50%;
+    filter:blur(120px);
+    bottom:-150px;
+    right:-150px;
+    z-index:-1;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    backdrop-filter:blur(12px);
+    background:rgba(15,23,42,.8);
+    border-bottom:1px solid rgba(255,255,255,.1);
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#818cf8;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 8%;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.badge{
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:50px;
+    background:rgba(99,102,241,.2);
+    color:#a5b4fc;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:70px;
+    line-height:1.1;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    color:#cbd5e1;
+    font-weight:400;
+    margin-bottom:25px;
+}
+
+.hero p{
+    color:#94a3b8;
+    line-height:1.9;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    background:linear-gradient(135deg,#6366f1,#ec4899);
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+section{
+    padding:100px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:42px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:30px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#818cf8;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:40px;
+}
+
+.skill{
+    padding:12px 20px;
+    border-radius:30px;
+    background:rgba(99,102,241,.2);
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid rgba(255,255,255,.1);
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:42px;
+}
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    gap:15px;
+}
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Annisa.</div>
+
+    <ul>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#experience">Pengalaman</a></li>
+        <li><a href="#achievement">Pencapaian</a></li>
+        <li><a href="#contact">Kontak</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+
+        <span class="badge">PORTFOLIO MAHASISWA</span>
+
+        <h1>Annisa Feriska Faradila</h1>
+
+        <h2>Mahasiswa</h2>
+
+        <p>
+            Mahasiswa yang memiliki minat dalam bidang teknologi digital,
+            desain kreatif, pengembangan website modern, serta inovasi
+            berbasis teknologi. Aktif mengembangkan kemampuan profesional
+            dan terus belajar mengikuti perkembangan era digital.
+        </p>
+
+        <a href="#about" class="btn">Jelajahi Portofolio</a>
+
+    </div>
+</section>
+
+<section id="about">
+
+    <div class="section-title">
+        <h2>Tentang Saya</h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Bio</h3>
+            <p>
+                Saya adalah mahasiswa yang berfokus pada pengembangan
+                keterampilan digital dan kreativitas. Saya senang
+                mempelajari teknologi baru dan menerapkannya dalam
+                berbagai proyek inovatif.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Visi</h3>
+            <p>
+                Menjadi profesional muda yang mampu menciptakan solusi
+                kreatif dan berdampak positif melalui teknologi modern.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Minat</h3>
+            <p>
+                Web Development, UI/UX Design, Branding Digital,
+                Public Speaking, dan Content Creation.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">UI/UX</span>
+        <span class="skill">Design</span>
+    </div>
+
+</section>
+
+<section id="experience">
+
+    <div class="section-title">
+        <h2>Pengalaman Kerja</h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>UI/UX Intern</h3>
+            <p>
+                Membantu merancang antarmuka aplikasi digital yang
+                modern dan meningkatkan pengalaman pengguna.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Content Creator</h3>
+            <p>
+                Mengembangkan konten kreatif dan strategi media sosial
+                untuk meningkatkan keterlibatan audiens.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Freelance Web Designer</h3>
+            <p>
+                Membuat website responsif dan modern untuk berbagai
+                kebutuhan bisnis dan organisasi.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="achievement">
+
+    <div class="section-title">
+        <h2>Pencapaian & Karir</h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Best Creative Student 2025</h3>
+            <p>
+                Penghargaan mahasiswa kreatif terbaik dalam bidang
+                inovasi dan teknologi digital.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Top 10 National Design Competition</h3>
+            <p>
+                Berhasil masuk 10 besar kompetisi desain digital
+                tingkat nasional.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Young Digital Innovator</h3>
+            <p>
+                Terpilih sebagai mahasiswa inspiratif dalam program
+                pengembangan teknologi kreatif.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <div class="section-title">
+        <h2>Kontak</h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Email</h3>
+            <p>annisaferiska@example.com</p>
+        </div>
+
+        <div class="card">
+            <h3>Instagram</h3>
+            <p>@annisaferiska</p>
+        </div>
+
+        <div class="card">
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/annisaferiska</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Annisa Feriska Faradila | Portfolio Website
+</footer>
+
+</body>
+  </html>
